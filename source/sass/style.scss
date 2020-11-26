@@ -8,8 +8,12 @@
 @import "./vendor/normalize";
 @import "reset";
 @import "mixins";
+@import "container";
 
 // main blocks
+
+@import "./blocks/present";
+@import "./blocks/form";
 
 // other
 

@@ -339,7 +339,7 @@ body {
 body {
   min-height: 100vh;
   overflow: auto;
-  background-color: #ffffff; }
+  background-color: #EFF6FF; }
 
 img,
 video,
@@ -417,6 +417,61 @@ input:matches([type="email"], [type="number"], [type="password"], [type="search"
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0); }
+
+.container {
+  margin: 20px auto;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.present {
+  background-image: url("../../img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 95vh; }
+  .present__logo {
+    width: 120px;
+    margin: 30px 0 0 30px; }
+
+.form {
+  padding: 80px 60px;
+  background-color: #FFFFFF;
+  width: 50%; }
+  .form__title {
+    font-weight: 700;
+    font-size: 36px; }
+  .form__sub-title {
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: #7B8A92; }
+  .form__social-btn-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .form__btn-soc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 45%;
+    height: 35px;
+    color: #FFFFFF;
+    letter-spacing: 1.1px;
+    cursor: pointer;
+    text-decoration: none; }
+  .form__btn-fb {
+    background: #255A9B; }
+  .form__btn-in {
+    background: #0076B6; }
+  .form__btn-img {
+    margin: 0 10px; }
 
 @font-face {
   font-family: "Barlow";

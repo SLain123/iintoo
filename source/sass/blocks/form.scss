@@ -1,0 +1,140 @@
+// main: ../style.scss
+
+.form {
+    padding: 80px 60px;
+    background-color: $white;
+    width: 50%;
+    // .form__title
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+    }
+
+    // .form__sub-title
+
+    &__sub-title {
+        font-size: 18px;
+        margin-bottom: 50px;
+        color: $dark-grey;
+    }
+
+
+    // .form__social-btn-block
+
+    &__social-btn-block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .form__btn-soc
+
+    &__btn-soc {
+        display: flex;
+        align-items: center;
+        width: 45%;
+        height: 35px;
+        color: $white;
+        letter-spacing: 1.1px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    // .form__btn-fb
+
+    &__btn-fb {
+        background: $fb-button;
+    }
+
+    // .form__btn-in
+
+    &__btn-in {
+        background: $in-button;
+    }
+
+    // .form__btn-img
+
+    &__btn-img {
+        margin: 0 10px;
+    }
+
+    // .form__dash-block
+
+    &__dash-block {
+    }
+
+    // .form__or
+
+    &__or {
+    }
+
+    // .form__info-block
+
+    &__info-block {
+    }
+
+    // .form__mail
+
+    &__mail {
+    }
+
+    // .form__mail-title
+
+    &__mail-title {
+    }
+
+    // .form__mail-input
+
+    &__mail-input {
+    }
+
+    // .form__phone
+
+    &__phone {
+    }
+
+    // .form__phone-title
+
+    &__phone-title {
+    }
+
+    // .form__phone-input
+
+    &__phone-input {
+    }
+
+    // .form__question
+
+    &__question {
+    }
+
+    // .form__radio-block
+
+    &__radio-block {
+    }
+
+    // .form__radio-title
+
+    &__radio-title {
+    }
+
+    // .form__check-lable
+
+    &__check-lable {
+    }
+
+    // .form__checkbox
+
+    &__checkbox {
+    }
+
+    // .form__check-text
+
+    &__check-text {
+    }
+
+    // .form__btn-submit
+
+    &__btn-submit {
+    }
+}

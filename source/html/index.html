@@ -1,13 +1,60 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.min.css">
-    <title>Шаблон</title>
+    <title>IINTO</title>
 </head>
 <body>
-    <div class="pattern">Шаблон</div>
+    <section class="main">
+        <div class="container">
+            <div class="present">
+                <div class="present__logo">
+                    <img src="../img/logo.svg" alt="logo">
+                </div>
+            </div>
+            <form class="form">
+                <p class="form__title">Get iinto it today</p>
+                <p class="form__sub-title">There is no charge or obligation upon registration.</p>
+                <div class="form__social-btn-block">
+                    <a href="#" class="form__btn-fb form__btn-soc">
+                        <img src="../img/facebook.svg" width="20" height="20" alt="facebook" class="form__btn-img">
+                        <span>Register with Facebook</span>
+                    </a>
+                    <a href="#" class="form__btn-in form__btn-soc">
+                        <img src="../img/linkedin.svg" width="20" height="20" alt="linkedin" class="form__btn-img">
+                        <span>Register with LinkedIn</span>
+                    </a>
+                </div>
+                <div class="form__dash-block">
+                    <hr>
+                    <span class="form__or">or</span>
+                    <hr>
+                </div>
+                <div class="form__info-block">
+                    <div class="form__mail">
+                        <span class="form__mail-title">Email</span>
+                        <input type="text" class="form__mail-input">
+                    </div>
+                    <div class="form__phone">
+                        <span class="form__phone-title">Phone</span>
+                        <input type="text" class="form__phone-input">
+                    </div>
+                </div>
+                <p class="form__question">What type of investor are you?</p>
+                <div class="form__radio-block">
+                    <p class="form__radio-title">Select the type of investor you are below.</p>
+
+                </div>
+                <lable class="form__check-lable">
+                    <input type="checkbox" class="form__checkbox">
+                    <span class="form__check-text">I agree to the terms and receiving notifications from iinto <a href="#">View full terms</a></span>
+                </lable>
+                <button class="form__btn-submit" type="submit">Create Account</button>
+            </form>
+        </div>
+    </section>
     <script src="./js/main.min.js"></script>
 </body>
 </html>
