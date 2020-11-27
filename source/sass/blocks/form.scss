@@ -25,6 +25,7 @@
     &__social-btn-block {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 40px;
     }
 
     // .form__btn-soc
@@ -33,11 +34,17 @@
         display: flex;
         align-items: center;
         width: 45%;
-        height: 35px;
+        height: 45px;
         color: $white;
         letter-spacing: 1.1px;
         cursor: pointer;
         text-decoration: none;
+        font-size: 14px;
+        opacity: .9;
+
+        &:hover {
+            opacity: 1;
+        }
     }
 
     // .form__btn-fb
@@ -61,51 +68,73 @@
     // .form__dash-block
 
     &__dash-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+
+        & hr {
+            border: none;
+            color: $ligth-grey;
+            background-color: $ligth-grey;
+            width: 140px;
+            height: 1px;
+            margin: 0;
+        }
     }
 
     // .form__or
 
     &__or {
+        text-transform: uppercase;
+        margin: 0 10px;
+        font-size: 12px;
     }
 
     // .form__info-block
 
     &__info-block {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
     }
 
-    // .form__mail
+    // .form__input
 
-    &__mail {
+    &__input {
+        height: 60px;
+        width: 100%;
+        border: 1px solid $ligth-grey;
+        padding: 20px 0 0 10px;
+
+        &:focus {
+            outline: none;
+            border: 1px solid $middle-grey;
+            border-left: 1px solid $blue;
+        }
     }
 
-    // .form__mail-title
+    // .form__info
 
-    &__mail-title {
+    &__info {
+        position: relative;
+        width: 45%;
     }
 
-    // .form__mail-input
+    // .form__info-title
 
-    &__mail-input {
-    }
-
-    // .form__phone
-
-    &__phone {
-    }
-
-    // .form__phone-title
-
-    &__phone-title {
-    }
-
-    // .form__phone-input
-
-    &__phone-input {
+    &__info-title {
+        position: absolute;
+        color: $middle-grey;
+        margin-left: 10px;
     }
 
     // .form__question
 
     &__question {
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 0;
     }
 
     // .form__radio-block
@@ -116,25 +145,49 @@
     // .form__radio-title
 
     &__radio-title {
+        color: $dark-grey;
     }
 
-    // .form__check-lable
+    // .form__check-label
 
-    &__check-lable {
+    &__check-label {
+        color: $grey;
+        font-size: 14px;
+
+        & a {
+            color: $blue;
+        }
     }
 
     // .form__checkbox
 
     &__checkbox {
-    }
+        opacity: .5;
+        margin-right: 10px;
+        cursor: pointer;
 
-    // .form__check-text
-
-    &__check-text {
+        &:checked {
+            opacity: 1;  
+        }
     }
 
     // .form__btn-submit
 
     &__btn-submit {
+        width: 45%;
+        background: $blue;
+        height: 45px;
+        border: none;
+        border-radius: 5px;
+        color: $white;
+        margin-top: 50px;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+        cursor: pointer;
+        opacity: .9;
+
+        &:hover {
+            opacity: 1;
+        }
     }
 }
