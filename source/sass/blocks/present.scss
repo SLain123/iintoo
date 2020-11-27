@@ -5,7 +5,15 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 50%;
-    height: 95vh;
+
+    @include w-1024 {
+        width: 35%;
+    }
+
+    @include w-768 {
+        width: 100%;
+        min-height: 80px;
+    }
 
     // .present__logo
 

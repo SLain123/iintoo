@@ -1,14 +1,31 @@
 // main: ../style.scss
 
 .form {
-    padding: 80px 60px;
+    padding: 50px 60px;
     background-color: $white;
     width: 50%;
+    display: flex;
+    flex-flow: column;
+
+    @include w-1024 {
+        width: 65%;
+    }
+
+    @include w-768 {
+        width: 100%;
+        padding: 10px 10px;
+    }
+
     // .form__title
 
     &__title {
         font-weight: 700;
         font-size: 36px;
+        margin-bottom: 15px;
+
+        @include w-768 {
+            font-size: 32px;
+          }
     }
 
     // .form__sub-title
@@ -17,6 +34,7 @@
         font-size: 18px;
         margin-bottom: 50px;
         color: $dark-grey;
+        font-weight: 400;
     }
 
 
@@ -41,9 +59,14 @@
         text-decoration: none;
         font-size: 14px;
         opacity: .9;
+        padding-right: 10px;
 
         &:hover {
             opacity: 1;
+        }
+
+        @include w-768 {
+            width: 49%;
         }
     }
 
@@ -62,7 +85,11 @@
     // .form__btn-img
 
     &__btn-img {
-        margin: 0 10px;
+        margin: 0 15px;
+
+        @include w-768 {
+           margin: 0 5px;
+        }
     }
 
     // .form__dash-block
@@ -110,15 +137,25 @@
         &:focus {
             outline: none;
             border: 1px solid $middle-grey;
-            border-left: 1px solid $blue;
+            border-left: 2px solid $blue;
         }
     }
+
+    // .form__info-lable
+
+    // &__info-lable {
+    //     display: block;
+    // }
 
     // .form__info
 
     &__info {
         position: relative;
         width: 45%;
+
+        @include w-768 {
+            width: 49%;
+        }
     }
 
     // .form__info-title
@@ -140,12 +177,126 @@
     // .form__radio-block
 
     &__radio-block {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        @include w-768 {
+           flex-flow: column;
+         }
     }
 
     // .form__radio-title
 
     &__radio-title {
         color: $dark-grey;
+        margin-bottom: 40px;
+    }
+
+    // .form__radio-item
+
+    &__radio-item {
+        display: flex;
+        align-items: center;
+    }
+
+    // .form__radio-opt
+
+    &__radio-opt {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+
+
+        &:not(:disabled):active+label::before {
+            background-color: $blue;
+            border-color: $blue;
+        }
+
+        &:focus+label::before {
+        box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25);
+        }
+
+        &:focus:not(:checked)+label::before {
+            border-color: #80bdff;
+        }
+
+        &:checked+label::before {
+            border: 3px solid $blue;
+          }
+    }
+
+    // .form__radio-label
+
+    &__radio-label {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+        cursor: pointer;
+
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            flex-shrink: 0;
+            flex-grow: 0;
+            border: 2px solid $grey;
+            border-radius: 50%;
+            margin-right: 0.5em;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 50% 50%;
+        }
+
+        &:hover::before {
+            border-color: $dark-grey;
+        }
+    }
+
+    // .form__radio-i 
+
+    &__radio-i {
+        text-decoration: none;
+        color: $grey;
+        font-size: 10px;
+        border: 1px solid $grey;
+        border-radius: 100px;
+        margin-left: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 12px;
+        height: 12px;
+    }
+
+    // .form__describe-block
+
+    &__describe-block {
+        margin-bottom: 30px;
+    }
+
+    // .form__describe-item
+
+    &__describe-item {
+        width: 50%;
+        border-radius: 10px;
+        box-shadow: 6px 6px 10px $ligth-grey, -6px 6px 10px $ligth-grey, 6px -6px 10px $ligth-grey, -6px -6px 10px $ligth-grey;
+        padding: 10px 15px;
+        line-height: 20px;
+        color: $grey;
+        font-size: 14px;
+
+        @include w-768 {
+            width: 75%;;
+          }
+    }
+
+    // .form__describe-item_hide
+
+    &__describe-item_hide {
+        display: none;
     }
 
     // .form__check-label
@@ -171,6 +322,12 @@
         }
     }
 
+    // .form__check-link
+
+    &__check-link {
+        white-space: nowrap;
+    }
+
     // .form__btn-submit
 
     &__btn-submit {
@@ -185,6 +342,7 @@
         letter-spacing: 1.2px;
         cursor: pointer;
         opacity: .9;
+        min-width: 200px;
 
         &:hover {
             opacity: 1;

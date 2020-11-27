@@ -1,6 +1,6 @@
 //main style.scss
 
-@mixin w-1366 {
+@mixin w-1240 {
     @media (max-width: $mon) {
       @content;
     }

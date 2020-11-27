@@ -4,4 +4,12 @@
     margin: 20px auto;
     width: 75%;
     display: flex;
+
+    @include w-1240 {
+        width: 98%;
+    }
+
+    @include w-768 {
+        flex-flow: column;
+    }
 }
