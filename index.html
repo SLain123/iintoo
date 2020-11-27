@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>IINTO</title>
+</head>
+<body>
+    <section class="main">
+        <div class="container">
+            <div class="present">
+                <div class="present__logo">
+                    <img src="./img/logo.svg" alt="logo">
+                </div>
+            </div>
+            <form class="form" action="#">
+                <h1 class="form__title">Get iinto it today</р>
+                <h2 class="form__sub-title">There is no charge or obligation upon registration.</h2>
+                <div class="form__social-btn-block">
+                    <a href="#" class="form__btn-fb form__btn-soc">
+                        <img src="./img/facebook.svg" width="18" height="18" alt="facebook" class="form__btn-img">
+                        <span>Register with Facebook</span>
+                    </a>
+                    <a href="#" class="form__btn-in form__btn-soc">
+                        <img src="./img/linkedin.svg" width="18" height="18" alt="linkedin" class="form__btn-img">
+                        <span>Register with LinkedIn</span>
+                    </a>
+                </div>
+                <div class="form__dash-block">
+                    <hr>
+                    <span class="form__or">or</span>
+                    <hr>
+                </div>
+                <div class="form__info-block">
+                    <div class="form__info">
+                        <label for="mail" class="form__info-title">Email</label>
+                        <input id="mail" type="text" class="form__input">
+                    </div>
+                    <div class="form__info">
+                        <label for="phone" class="form__info-title">Phone</label>
+                        <input type="text" id="phone" class="form__input">
+                    </div>
+                </div>
+                <h2 class="form__question">What type of investor are you?</h2>
+                <p class="form__radio-title">Select the type of investor you are below.</p>
+                <div class="form__radio-block">
+                    <div class="form__radio-item">
+                        <input type="radio" class="form__radio-opt" id="ind" name="invest" value="individual" checked>
+                        <label class="form__radio-label" for="ind">Individual</label>
+                        <a class="form__radio-i" href="#">i</a>
+                    </div>
+                    <div class="form__radio-item">
+                        <input type="radio" class="form__radio-opt" id="bsn" name="invest" value="business">
+                        <label class="form__radio-label" for="bsn">Business</label>
+                        <a class="form__radio-i" href="#">i</a>
+                    </div>
+                    <div class="form__radio-item">
+                        <input type="radio" class="form__radio-opt" id="ira" name="invest" value="ira">
+                        <label class="form__radio-label" for="ira">IRA</label>
+                        <a class="form__radio-i" href="#">i</a>
+                    </div>
+                    <div class="form__radio-item">
+                        <input type="radio" class="form__radio-opt" id="trs" name="invest" value="individual">
+                        <label class="form__radio-label" for="trs">Trust</label>
+                        <a class="form__radio-i" href="#">i</a>
+                    </div>
+                </div>
+                <div class="form__describe-block">
+                    <div class="form__describe-item" id="desc-1">I am a natural person investing on my own behalf as a solvn owner, joint tenant, or tenant in common.</div>
+                    <div class="form__describe-item form__describe-item_hide" id="desc-2">I am a natural person investing on my own behalf as a solvn owner, joint tenant, or tenant in common.</div>
+                    <div class="form__describe-item form__describe-item_hide" id="desc-3">I am a natural person investing on my own behalf as a solvn owner, joint tenant, or tenant in common.</div>
+                    <div class="form__describe-item form__describe-item_hide" id="desc-4">I am a natural person investing on my own behalf as a solvn owner, joint tenant, or tenant in common.</div>
+                </div>
+                <label class="form__check-label">
+                    <input type="checkbox" class="form__checkbox">
+                    I agree to the terms and receiving notifications from iinto <a href="#" class="form__check-link">View full terms</a>
+                </label>
+                <button class="form__btn-submit" type="submit">Create Account</button>
+            </form>
+        </div>
+    </section>
+    <script src="./js/main.min.js"></script>
+</body>
+</html>
