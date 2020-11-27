@@ -435,7 +435,7 @@ input:matches([type="email"], [type="number"], [type="password"], [type="search"
               flex-flow: column; } }
 
 .present {
-  background-image: url("../../img/bg.jpg");
+  background-image: url("../img/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 50%; }
